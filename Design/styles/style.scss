@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap');
+$primary-color: #0fbcf9;
+$black-color: #292929;
+$font-color:#3a3a3a;
+$shadow:0 5px 6px rgba(83, 83, 83, 0.2);
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+    color: $font-color;
+}
+@mixin flexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@mixin flexColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background: #f3f2ef;
+    
+    .mainContainer{
+        width: 100%;
+        height: 100%;
+        min-height: 90vh;
+        @include flexRow();
+        .profileTab{
+            width: 20%;
+            height: 100%;
+            background: #ffffff;
+            @include flexColumn();
+            border: 1px solid rgb(216, 216, 216);
+            justify-content: space-between;
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            .detailsContainer{
+                width: 100%;
+                height: 300px;
+                background: $primary-color;
+                @include flexColumn();
+                gap: 20px;
+                .dp{
+                    width: 120px;
+                    height: 120px;
+                    background: white;
+                    border-radius: 50%;
+                    object-fit: cover;
+                }
+                .name{
+                    font-size: 18px;
+                    color: white;
+                }
+                
+            }
+            .socials{
+                width: 100%;
+                height: 20%;
+                @include flexRow();
+                gap: 10px;
+                svg{
+                    width: 24px;
+                    path{
+                        fill:$primary-color;
+                    }
+                    cursor: pointer;
+                }
+            }
+        }
+        
+        .userInformation{
+            margin-left: 20%;
+            width: 100%;
+            height: 100%;
+            min-height: 90vh;
+            background: #f3f2ef;
+            .navbar{
+                width: 100%;
+                height: 8vh;
+                @include flexRow();
+                justify-content: space-between;
+                padding: 0 2% 0 2%;
+                background: white;
+                .inputWrap{
+                    width: 70%;
+                    height: 50px;
+                    @include flexRow();
+                    justify-content: flex-start;
+                    gap: 20px;
+                    .search{
+                        width: 70%;
+                        height: 50px;
+                        font-size: 18px;
+                        color: #3a3a3a;
+                        outline: none;
+                        padding-left: 10px;
+                    }
+                    svg{
+                        cursor: pointer;
+                    }
+                }
+                .searchLink{
+                    text-decoration: none;
+                    color: $primary-color;
+        
+                }
+                
+            }
+            .section{
+                width: 100%;
+                @include flexColumn();
+                align-items: flex-start;
+                padding: 0 2% 2% 2%;
+                background: white;
+                h2{
+                    width: fit-content;
+                    font-size: 36px;
+                    font-weight: bold;
+                    font-family: 'maven pro';
+                    color: $black-color;
+                    min-height: 100px;
+                    @include flexColumn();
+                }
+            } 
+            .AboutDiv{
+                min-height: 200px;
+                border-radius: 10px;
+                height: fit-content;
+                .description{
+                    text-align: left;
+                }
+            }
+           
+            .universityInformation{
+                width: 100%;
+                min-height: 400px;
+                background: white;
+                @include flexRow();
+                justify-content: flex-start;
+                padding: 0 2% 0 2%;
+                img{
+                    width: 400px;
+                    height:80%;
+                    object-fit: contain;
+                }
+                .detailWrap{
+                    width: 70%;
+                    height: 100%;
+                    padding-left: 5%;
+                    @include flexColumn();
+                    align-items: flex-start;
+                    .position{
+                        font-size: 24px;
+                        font-weight: bolder;
+                        
+                    }
+                    .collegeName{
+                        font-size: 18px;
+                        color: rgb(100, 100, 100);
+                    }
+                }
+            }
+            .certifications{
+                .certicationsWrap{
+                    width: 100%;
+                    @include flexColumn();
+                    justify-content: flex-start;
+                    gap: 10px;
+                    .certificate
+                    {
+                        width: 100%;
+                        min-height: 150px;
+                        @include flexRow();
+                        justify-content: flex-start;
+                        gap: 20px;
+                        box-shadow: $shadow;
+                        padding: 0 2% 0 2%;
+                        border-radius: 10px;
+                        img{
+                            width: 100px;
+                            height: 100px;
+                            object-fit: cover;
+                        }
+                        .detailsWrap{
+                            width: 70%;
+                            height: 100%;
+                            @include flexColumn();
+                            align-items:  flex-start;
+                            .certHead{
+                                font-size: 18px;
+                                color: $black-color;
+                            }
+                            .certDescp{
+                                font-size: 16px;
+                                color: $font-color;
+                            }
+                            .certDate{
+                                font-size: 14px;
+                                color: #4e4e4e;
+                            }
+    
+                        }
+                    }
+
+                }
+                
+            }
+            .skills{
+                .skillList{
+                    width: 100%;
+                    display: grid;
+                    grid-template-columns: auto auto auto auto;
+                    gap: 20px;
+                    .skill{
+                        width: fit-content;
+                        min-width: 150px;
+                        @include flexRow();
+                        height: 30px;
+                        background: $primary-color;
+                        border-radius: 10px;
+                        color: white;
+                    }
+                }
+            }
+
+        }
+        
+    }
+}
