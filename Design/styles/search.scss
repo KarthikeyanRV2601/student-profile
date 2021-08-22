@@ -144,6 +144,54 @@ body{
                     border: 1px solid $font-color;
                     // background: #e7e7e7;
                 }
+                button{
+                    width: 70px;
+                    height: 40px;
+                    cursor: pointer;
+                    background: $primary-color;
+                    color: white;
+                    border: none;
+                    border-radius: 6px;
+                    &:hover{
+                        background: $gradient-dark
+                    }
+                }
+                .inputWithButton{
+                    @include flexRow();
+                    width: 70%;
+                    gap: 10px;
+                }
+            }
+            .skillsEntries{
+                width: 100%;
+                max-height: 200px;
+                display: grid;
+                grid-template-columns: repeat(auto-fit, auto-fit);
+                grid-gap: 5px;
+                overflow-y: auto;
+                padding: 10px;
+                .skill{
+                    width: fit-content;
+                    padding: 5px;
+                    min-height: 30px;
+                    background: #949494;
+                    border-radius: 10px;
+                    @include flexRow();
+                    gap: 10px;
+                    .text{
+                        color:white;
+                    }
+                    svg{
+                        width: 18px;
+                        height: 18px;
+                        cursor: pointer;
+                        &:hover{
+                            path{
+                                fill: #ff5e5e;
+                            }
+                        }
+                    }
+                }
             }
         }
         

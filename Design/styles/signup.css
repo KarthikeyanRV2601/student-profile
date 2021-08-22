@@ -64,18 +64,8 @@ body header p {
 }
 
 body #signupForm {
-  width: 30%;
+  width: 40%;
   height: 90%;
-  border-radius: 10px;
-  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-          box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
-  background: -webkit-gradient(linear, left top, left bottom, from(#005dbb), to(#0875e0));
-  background: linear-gradient(#005dbb, #0875e0);
-}
-
-body #signupForm .title {
-  width: 100%;
-  height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -90,9 +80,15 @@ body #signupForm .title {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  font-size: 18px;
-  font-family: 'Roboto';
-  color: white;
+}
+
+body #signupForm .title {
+  width: 300px;
+  height: 100px;
+  text-align: left;
+  font-size: 48px;
+  font-family: 'Montserrat', sans-serif;
+  color: #005dbb;
 }
 
 body #signupForm button {
@@ -126,7 +122,6 @@ body #signupForm button:hover {
 }
 
 body #signupForm .inputFields {
-  width: 100%;
   height: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -145,6 +140,9 @@ body #signupForm .inputFields {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   gap: 20px;
 }
 
@@ -174,8 +172,7 @@ body #signupForm .inputFields input {
   -webkit-box-shadow: none;
           box-shadow: none;
   color: #111;
-  border-radius: 4px;
-  background: white;
+  border: 1px solid #005dbb;
 }
 
 body #signupForm .inputFields input:invalid {
@@ -184,7 +181,8 @@ body #signupForm .inputFields input:invalid {
 
 body #signupForm .inputFields input:focus,
 body #signupForm .inputFields input:valid {
-  border-color: white;
+  border-color: #0fbcf9;
+  background: #005dbb18;
 }
 
 body #signupForm .inputFields input:focus ~ label,
@@ -192,7 +190,7 @@ body #signupForm .inputFields input:valid ~ label {
   font-size: 14px;
   top: -30px;
   left: 0;
-  color: white;
+  color: #0fbcf9;
 }
 
 body .bgIllustration {
