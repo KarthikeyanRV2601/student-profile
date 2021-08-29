@@ -31,8 +31,8 @@ It also allows the user to search for a particular student in the database and v
   <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/search.jpg" />
 </p>
 <h2>⌨️ DEVELOPERS</h2>
-<a href="">Mighil dath</a><br/>
-<a href="">Karthikeyan</a><br/>
-<a href="">Tanmaay kankaria</a><br/>
+<a href="https://github.com/Mighil31">Mighil dath</a><br/>
+<a href="https://github.com/KarthikeyanRV2601">Karthikeyan</a><br/>
+<a href="https://github.com/Tanmaay3">Tanmaay kankaria</a><br/>
 
 
