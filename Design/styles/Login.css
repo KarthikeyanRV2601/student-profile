@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+* {
+  margin: 0%;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'nuninto', sans-serif;
+  font-size: 14px;
+}
+
+#root {
+  width: 100%;
+  height: 100%;
+}
+
+#root .LoginPage {
+  width: 100%;
+  height: 100vh;
+  padding-top: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+}
+
+#root .LoginPage header {
+  width: 100%;
+  height: 10vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 5% 0 5%;
+}
+
+#root .LoginPage header .Logo svg {
+  width: 36px;
+  height: 36px;
+}
+
+#root .LoginPage header p {
+  font-family: 'Roboto';
+  font-size: 18px;
+  color: #0fbcf9;
+}
+
+#root .LoginPage .LeftPanel {
+  width: 60%;
+  height: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding-left: 5%;
+}
+
+#root .LoginPage .LeftPanel .Introtext {
+  width: 100%;
+  height: 40%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#root .LoginPage .LeftPanel .Introtext h1 {
+  color: #005dbb;
+  font-size: 48px;
+  text-align: left;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#root .LoginPage .LeftPanel .Introtext p {
+  font-size: 16px;
+  text-align: left;
+  color: #535353;
+}
+
+#root .LoginPage .LeftPanel .LoginForm {
+  width: 50%;
+  height: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+#root .LoginPage .LeftPanel .LoginForm .newUser a {
+  color: #0fbcf9;
+}
+
+#root .LoginPage .LeftPanel .LoginForm .LoginButton {
+  width: 200px;
+  height: 40px;
+  background: #0fbcf9;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  text-decoration: none;
+  border-radius: 20px;
+  z-index: 5;
+}
+
+#root .LoginPage .LeftPanel .LoginForm .LoginButton:hover {
+  background: #005dbb;
+  color: white;
+}
+
+#root .LoginPage .LeftPanel .LoginForm .input-field {
+  position: relative;
+  width: 250px;
+  height: 44px;
+  line-height: 44px;
+}
+
+#root .LoginPage .LeftPanel .LoginForm label {
+  position: absolute;
+  top: 0;
+  left: 10px;
+  color: #686868;
+  -webkit-transition: 0.2s all;
+  transition: 0.2s all;
+  cursor: text;
+}
+
+#root .LoginPage .LeftPanel .LoginForm input {
+  width: 100%;
+  height: 45px;
+  border: 0;
+  outline: 0;
+  padding-left: 10px;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  color: #111;
+  border-radius: 4px;
+  background: #e7e7e7;
+}
+
+#root .LoginPage .LeftPanel .LoginForm input:invalid {
+  outline: 0;
+}
+
+#root .LoginPage .LeftPanel .LoginForm input:focus,
+#root .LoginPage .LeftPanel .LoginForm input:valid {
+  border-color: #0fbcf9;
+}
+
+#root .LoginPage .LeftPanel .LoginForm input:focus ~ label,
+#root .LoginPage .LeftPanel .LoginForm input:valid ~ label {
+  font-size: 14px;
+  top: -30px;
+  left: 0;
+  color: #0fbcf9;
+}
+/*# sourceMappingURL=Login.css.map */

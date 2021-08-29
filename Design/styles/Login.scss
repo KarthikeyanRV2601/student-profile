@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+$primary-color: #0fbcf9;
+$black-color: #292929;
+$font-color:#3a3a3a;
+$shadow:0 5px 6px rgba(83, 83, 83, 0.2);
+$border-style: 1px solid #a7a7a756;
+$gradient-dark:#005dbb;
+$gradient-light:#0875e0;
+@mixin flexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@mixin ButtonStyle {
+  width: 200px;
+  height:40px;
+  background: $primary-color;
+  color: white;
+  @include flexRow();
+  cursor: pointer;
+  transition: 0.2s;
+  text-decoration: none;
+  border-radius: 20px;
+  &:hover{
+      background: $gradient-dark;
+      color: white;
+  }
+      z-index: 5;
+  
+}
+@mixin Shadow {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+@mixin flexColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nuninto', sans-serif;
+    font-size: 14px;
+
+}
+#root {
+  width: 100%;
+  height: 100%;
+.LoginPage{
+    width: 100%;
+    height: 100vh;
+    padding-top: 5%;
+    @include flexRow();
+    // justify-content: flex-start;
+    header{
+      width: 100%;
+      height: 10vh;
+      position: fixed;
+      top: 0;
+      left: 0;
+      @include flexRow();
+      justify-content:  space-between;
+      padding: 0 5% 0 5%;
+      .Logo{
+        svg{
+          width: 36px;
+          height: 36px;
+        }
+      }
+      p{
+        font-family: 'Roboto';
+        font-size: 18px;
+        color: $primary-color;
+      }
+    }
+    
+    
+    .LeftPanel{
+        width: 60%;
+        height: 70%;
+        @include flexColumn();
+        justify-content: space-evenly;
+        align-items: flex-start;
+        padding-left: 5%;
+    .Introtext{
+        width: 100%;
+        height: 40%;
+        @include flexColumn();
+        justify-content: space-around;
+        align-items: flex-start;
+        h1{
+            color: $gradient-dark;
+            font-size: 48px;
+            text-align: left;
+            font-family: 'Montserrat', sans-serif;
+            
+          
+        }
+        p{
+          font-size: 16px;
+          text-align: left;
+          color: #535353;
+        }
+        
+    }
+    .LoginForm {
+            width: 50%;
+            height: 50%;
+            @include flexColumn();
+            justify-content: space-around;
+            align-items: flex-start;
+            .newUser{
+              a{
+                color: $primary-color;
+              }
+            }
+            .LoginButton{
+              @include ButtonStyle();
+            }
+          .input-field {
+            position: relative;
+            width: 250px;
+            height: 44px;
+            line-height: 44px;
+          }
+          label {
+            position: absolute;
+            top: 0;
+            left: 10px;
+            color: #686868;
+            transition: 0.2s all;
+            cursor: text;
+          }
+          input {
+            width: 100%;
+            height: 45px;
+            border: 0;
+            outline: 0;
+            padding-left: 10px;
+            box-shadow: none;
+            color: #111;
+            border-radius: 4px;
+            background: #e7e7e7;
+          }
+          input:invalid {
+            outline: 0;
+            // color: #ff2300;
+            //   border-color: #ff2300;
+          }
+          input:focus,
+          input:valid {
+            border-color: $primary-color;
+          }
+          input:focus~label,
+          input:valid~label {
+            font-size: 14px;
+            top: -30px;
+            left: 0;
+            color: $primary-color;
+          }
+        }
+          
+    }
+    
+}
+}
