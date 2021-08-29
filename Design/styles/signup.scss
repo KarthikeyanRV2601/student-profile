@@ -81,9 +81,10 @@ body{
         }
       }
       #signupForm{
-          width: 40%;
+          width: 60%;
           height: 90%;
           // padding-right: 10%;
+          padding-top: 2%;
           @include flexColumn();
           .title{
               width: 300px;
@@ -104,7 +105,7 @@ body{
             height: 70%;
             @include flexColumn();
             justify-content: flex-start;
-            align-items: flex-end;
+            align-items: flex-start;
             gap: 20px;
           
           .input-field {
@@ -131,7 +132,7 @@ body{
             color: #111;
             // border-radius: 4px;
             // background: #e7e7e7;
-            border: 1px solid #005dbb;
+            border: 1px solid #0060c033;
           }
           input:invalid {
             outline: 0;
@@ -141,14 +142,14 @@ body{
           input:focus,
           input:valid {
             border-color: $primary-color;
-            background: #005dbb18;
+            background: rgba(4, 94, 184, 0.014);
           }
           input:focus~label,
           input:valid~label {
             font-size: 14px;
             top: -30px;
             left: 0;
-            color: $primary-color;
+            // color: $primary-color;
           }
       }
     }
