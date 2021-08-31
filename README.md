@@ -30,9 +30,25 @@ It also allows the user to search for a particular student in the database and v
   Search page
   <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/search.jpg" />
 </p>
+
+<p>
+  Feeds page 1
+  <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/feeds1.jpg" />
+</p>
+
+<p>
+  Feeds page 2
+  <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/feed2.jpg" />
+</p>
+
+<p>
+  Settings  page
+  <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/settings.jpg" />
+</p>
+
+
 <h2>⌨️ DEVELOPERS</h2>
 <a href="https://github.com/Mighil31">Mighil dath</a><br/>
 <a href="https://github.com/KarthikeyanRV2601">Karthikeyan</a><br/>
 <a href="https://github.com/Tanmaay3">Tanmaay kankaria</a><br/>
-
 

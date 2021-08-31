@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +12,19 @@
 }
 
 body {
-  width: 100%;
-  height: 100vh;
+  widows: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  position: relative;
+  padding: 10vh 0 10vh 0;
   background: #f3f2ef;
 }
 
@@ -35,6 +47,7 @@ body .navbar {
   padding: 0 2% 0 2%;
   background: white;
   position: fixed;
+  top: 0;
   z-index: 1;
   -webkit-box-shadow: 0 2px 2px rgba(83, 83, 83, 0.2);
           box-shadow: 0 2px 2px rgba(83, 83, 83, 0.2);
@@ -107,23 +120,7 @@ body .navbar .sign_in_or_out a:hover {
   color: #005dbb;
 }
 
-body .mainContainer {
-  width: 100%;
-  height: 100%;
-  min-height: 90vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-}
-
-body .mainContainer .profileTab {
+body .profileTab {
   width: 20%;
   height: 92vh;
   background: -webkit-gradient(linear, left top, left bottom, from(#005dbb), to(#0875e0));
@@ -151,7 +148,7 @@ body .mainContainer .profileTab {
   bottom: 0;
 }
 
-body .mainContainer .profileTab .detailsContainer {
+body .profileTab .detailsContainer {
   width: 100%;
   height: 300px;
   display: -webkit-box;
@@ -171,7 +168,7 @@ body .mainContainer .profileTab .detailsContainer {
   gap: 20px;
 }
 
-body .mainContainer .profileTab .detailsContainer .imgWrap {
+body .profileTab .detailsContainer .imgWrap {
   width: 120px;
   height: 120px;
   border-radius: 50%;
@@ -179,7 +176,7 @@ body .mainContainer .profileTab .detailsContainer .imgWrap {
   background: white;
 }
 
-body .mainContainer .profileTab .detailsContainer .imgWrap .dp {
+body .profileTab .detailsContainer .imgWrap .dp {
   width: 100%;
   height: 100%;
   background: white;
@@ -188,12 +185,12 @@ body .mainContainer .profileTab .detailsContainer .imgWrap .dp {
      object-fit: cover;
 }
 
-body .mainContainer .profileTab .detailsContainer .name {
+body .profileTab .detailsContainer .name {
   font-size: 18px;
   color: white;
 }
 
-body .mainContainer .profileTab .links {
+body .profileTab .links {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -214,7 +211,7 @@ body .mainContainer .profileTab .links {
           align-items: flex-start;
 }
 
-body .mainContainer .profileTab .links .link {
+body .profileTab .links .link {
   width: 100%;
   min-height: 40px;
   display: -webkit-box;
@@ -231,7 +228,7 @@ body .mainContainer .profileTab .links .link {
   text-decoration: none;
 }
 
-body .mainContainer .profileTab .links .link .wrap {
+body .profileTab .links .link .wrap {
   width: 100%;
   min-height: 40px;
   display: -webkit-box;
@@ -247,22 +244,22 @@ body .mainContainer .profileTab .links .link .wrap {
   gap: 20px;
 }
 
-body .mainContainer .profileTab .links .link .wrap svg {
+body .profileTab .links .link .wrap svg {
   width: 24px;
   height: 24px;
 }
 
-body .mainContainer .profileTab .links .link .wrap p {
+body .profileTab .links .link .wrap p {
   text-align: left;
   width: 60%;
   color: white;
 }
 
-body .mainContainer .profileTab .links .link:hover {
+body .profileTab .links .link:hover {
   background: #005dbb;
 }
 
-body .mainContainer .profileTab .socials {
+body .profileTab .socials {
   width: 100%;
   height: 20%;
   display: -webkit-box;
@@ -278,24 +275,21 @@ body .mainContainer .profileTab .socials {
   gap: 10px;
 }
 
-body .mainContainer .profileTab .socials svg {
+body .profileTab .socials svg {
   width: 24px;
   cursor: pointer;
 }
 
-body .mainContainer .profileTab .socials svg path {
+body .profileTab .socials svg path {
   fill: white;
 }
 
-body .mainContainer .profileTab .socials svg:hover path {
+body .profileTab .socials svg:hover path {
   fill: #b8b8b8;
 }
 
-body .mainContainer .userInformation {
-  margin-left: 20%;
-  width: 100%;
-  height: 100%;
-  min-height: 90vh;
+body .feedsContainer {
+  width: 60%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -310,16 +304,66 @@ body .mainContainer .userInformation {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  align-items: center;
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
   gap: 20px;
-  padding-top: 10vh;
 }
 
-body .mainContainer .userInformation .detailsWrap {
-  width: 70%;
-  height: 100%;
+body .feedsContainer .feed {
+  width: 700px;
+  background: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  border-radius: 10px;
+  padding: 20px;
+  border: 1px solid #a7a7a756;
+}
+
+body .feedsContainer .feed .userDetails {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+body .feedsContainer .feed .userDetails .dp {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .feedsContainer .feed .userDetails .details {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -337,28 +381,25 @@ body .mainContainer .userInformation .detailsWrap {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 5px;
+  padding-left: 10px;
 }
 
-body .mainContainer .userInformation .detailsWrap .Head {
-  font-size: 18px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 500;
-  color: #005dbb;
-}
-
-body .mainContainer .userInformation .detailsWrap .Descp {
+body .feedsContainer .feed .userDetails .details .name {
   font-size: 16px;
+  font-weight: bolder;
+}
+
+body .feedsContainer .feed .userDetails .details .institution {
+  font-size: 14px;
   color: #3a3a3a;
 }
 
-body .mainContainer .userInformation .detailsWrap .Date {
-  font-size: 14px;
-  color: #7a7a7a;
+body .feedsContainer .feed .userDetails .details .feedTime {
+  font-size: 12px;
+  color: #818181;
 }
 
-body .mainContainer .userInformation .section {
-  width: 90%;
+body .feedsContainer .feed .feedDetails {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -373,52 +414,88 @@ body .mainContainer .userInformation .section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 0 2% 2% 2%;
-  background: white;
-  border-radius: 10px;
-  border: 1px solid #a7a7a756;
-  position: relative;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+  width: 100%;
 }
 
-body .mainContainer .userInformation .section span {
-  position: absolute;
-  top: -200px;
+body .feedsContainer .feed .feedDetails .description {
+  width: 100%;
+  text-align: left;
+  color: #3a3a3a;
 }
 
-body .mainContainer .userInformation .section svg {
-  max-height: 24px;
-  max-width: 24px;
-  position: absolute;
-  right: 20px;
-  top: 20px;
+body .feedsContainer .feed .feedDetails .mediaSource {
+  width: 100%;
+}
+
+body .feedsContainer .feed .feedDetails .mediaSource img, body .feedsContainer .feed .feedDetails .mediaSource video {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .feedsContainer .feed .feedInteractions {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 20px;
+  height: 50px;
+}
+
+body .feedsContainer .feed .feedInteractions .icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+}
+
+body .feedsContainer .feed .feedInteractions .icon svg {
   cursor: pointer;
 }
 
-body .mainContainer .userInformation .section svg path {
-  fill: #3a3a3a;
+body .feedsContainer .feed .feedInteractions .icon svg:hover path {
+  fill: #0fbcf9;
 }
 
-body .mainContainer .userInformation .section svg:hover path {
-  fill: #7a7a7a;
+body .feedsContainer .addFeedComponent {
+  border: none;
 }
 
-body .mainContainer .userInformation .section .addnew {
-  min-width: 36px;
-  min-height: 36px;
-}
-
-body .mainContainer .userInformation .section h2 {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  font-size: 28px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 500;
-  color: #005dbb;
-  min-height: 100px;
+body .feedsContainer .addFeedComponent .addPostButton {
+  width: 200px;
+  height: 200px;
+  border: 1px dashed rgba(63, 63, 63, 0.432);
+  border-radius: 20px;
+  cursor: pointer;
+  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -435,206 +512,14 @@ body .mainContainer .userInformation .section h2 {
           flex-direction: column;
 }
 
-body .mainContainer .userInformation .AboutDiv {
-  min-height: 200px;
-  border-radius: 10px;
-  height: -webkit-fit-content;
-  height: -moz-fit-content;
-  height: fit-content;
-  gap: 10px;
-  position: relative;
-}
-
-body .mainContainer .userInformation .AboutDiv .description {
-  text-align: left;
-}
-
-body .mainContainer .userInformation .AboutDiv .address {
-  font-size: 16px;
-  color: #7a7a7a;
-}
-
-body .mainContainer .userInformation .universityInformation {
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 20px;
-}
-
-body .mainContainer .userInformation .universityInformation .wrap {
-  width: 100%;
-  min-height: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-shadow: 0 5px 6px rgba(83, 83, 83, 0.2);
-          box-shadow: 0 5px 6px rgba(83, 83, 83, 0.2);
-  padding: 0 2% 0 2%;
-  border-radius: 10px;
-  gap: 20px;
-  position: relative;
-}
-
-body .mainContainer .userInformation .universityInformation .wrap img {
-  width: 70px;
-  height: 70px;
-  border-radius: 6px;
+body .feedsContainer .addFeedComponent .addPostButton img {
+  width: 100px;
+  height: 100px;
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-body .mainContainer .userInformation .certifications .certicationsWrap {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 10px;
+body .feedsContainer .addFeedComponent .addPostButton:hover {
+  background: rgba(231, 231, 231, 0.836);
 }
-
-body .mainContainer .userInformation .certifications .certicationsWrap .certificate {
-  width: 100%;
-  min-height: 150px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 20px;
-  -webkit-box-shadow: 0 5px 6px rgba(83, 83, 83, 0.2);
-          box-shadow: 0 5px 6px rgba(83, 83, 83, 0.2);
-  padding: 0 2% 0 2%;
-  border-radius: 10px;
-  position: relative;
-}
-
-body .mainContainer .userInformation .certifications .certicationsWrap .certificate img {
-  width: 70px;
-  height: 70px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  border-radius: 6px;
-}
-
-body .mainContainer .userInformation .certifications .certicationsWrap .certificate .detailsWrap {
-  width: 70%;
-  height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  gap: 5px;
-}
-
-body .mainContainer .userInformation .certifications .certicationsWrap .certificate .detailsWrap .certHead {
-  font-size: 18px;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-weight: 500;
-  color: #005dbb;
-}
-
-body .mainContainer .userInformation .certifications .certicationsWrap .certificate .detailsWrap .certDescp {
-  font-size: 16px;
-  color: #3a3a3a;
-}
-
-body .mainContainer .userInformation .certifications .certicationsWrap .certificate .detailsWrap .certDate {
-  font-size: 14px;
-  color: #7a7a7a;
-}
-
-body .mainContainer .userInformation .skills .skillList {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: auto auto auto auto;
-      grid-template-columns: auto auto auto auto;
-  gap: 20px;
-}
-
-body .mainContainer .userInformation .skills .skillList .skill {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-  padding: 5px;
-  min-height: 30px;
-  background: #0fbcf9;
-  border-radius: 10px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  gap: 10px;
-}
-
-body .mainContainer .userInformation .skills .skillList .skill .text {
-  color: white;
-}
-
-body .mainContainer .userInformation .skills .skillList .skill .deleteIcon {
-  width: 18px;
-  height: 18px;
-  top: 0;
-  right: 0;
-  cursor: pointer;
-  position: relative;
-}
-
-body .mainContainer .userInformation .skills .skillList .skill .deleteIcon path {
-  fill: white;
-}
-
-body .mainContainer .userInformation .skills .skillList .skill .deleteIcon:hover path {
-  fill: #ff5e5e;
-}
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=feeds.css.map */
