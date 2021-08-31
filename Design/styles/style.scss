@@ -359,12 +359,30 @@ body{
                     gap: 20px;
                     .skill{
                         width: fit-content;
-                        min-width: 150px;
-                        @include flexRow();
-                        height: 30px;
+                        padding: 5px;
+                        min-height: 30px;
                         background: $primary-color;
                         border-radius: 10px;
-                        color: white;
+                        @include flexRow();
+                        gap: 10px;
+                        .text{
+                            color:white;
+                        }
+                        .deleteIcon{
+                            width: 18px;
+                            height: 18px;
+                            top: 0;
+                            right: 0;
+                            cursor: pointer;position: relative;
+                            path{
+                                fill: white;
+                            }
+                            &:hover{
+                                path{
+                                    fill: #ff5e5e;
+                                }
+                            }
+                        }
                     }
                 }
             }

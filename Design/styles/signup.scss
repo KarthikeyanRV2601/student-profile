@@ -153,9 +153,9 @@ body{
           }
       }
     }
-    .bgIllustration{
-        width: 50%;
+    lottie-player{
         height: 100%;
         object-fit: contain;
+        padding-top: 30px;
     }
 }
