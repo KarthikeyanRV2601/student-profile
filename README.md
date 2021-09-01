@@ -8,6 +8,7 @@ The website will have a main profile page that shows the logged in user’s deta
 The profile page of each student allows them to upload and update several details such as certifications completed, projects done, research papers published etc.<br/>
 It also allows the user to search for a particular student in the database and view their details as well.
 <h2>💻 TECH STACK</h2>
+<img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/System design/techstack.png"/>
 <h2>📸 SCREENSHOTS</h2>
 <p>
   Signin page
