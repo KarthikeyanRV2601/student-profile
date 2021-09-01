@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>profile settingsS</title>
+    <title>Add new feed</title>
+    <link rel="stylesheet" href="../styles/addFeed.css">
     <link rel="stylesheet" href="../styles/navbar_profilesTab.css">
-    <link rel="stylesheet" href="../styles/profile-settings.css">
 </head>
 <body>
     <div class="navbar">
@@ -89,56 +89,34 @@
             <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M30.9375 3.9375H5.0625C4.44023 3.9375 3.9375 4.44023 3.9375 5.0625V30.9375C3.9375 31.5598 4.44023 32.0625 5.0625 32.0625H30.9375C31.5598 32.0625 32.0625 31.5598 32.0625 30.9375V5.0625C32.0625 4.44023 31.5598 3.9375 30.9375 3.9375ZM25.5691 14.1223C25.5797 14.2875 25.5797 14.4598 25.5797 14.6285C25.5797 19.7895 21.6492 25.7344 14.4668 25.7344C12.252 25.7344 10.1988 25.091 8.46914 23.9836C8.78555 24.0188 9.08789 24.0328 9.41133 24.0328C11.2395 24.0328 12.9199 23.4141 14.2594 22.3664C12.5438 22.3313 11.1023 21.2063 10.6102 19.6594C11.2113 19.7473 11.7527 19.7473 12.3715 19.5891C11.4881 19.4096 10.6941 18.9298 10.1244 18.2313C9.55462 17.5327 9.24429 16.6585 9.24609 15.757V15.7078C9.76289 15.9996 10.3711 16.1789 11.0074 16.2035C10.4725 15.847 10.0338 15.364 9.73023 14.7974C9.42667 14.2307 9.26762 13.5979 9.26719 12.9551C9.26719 12.2273 9.45703 11.5629 9.79805 10.9863C10.7786 12.1934 12.0021 13.1806 13.3891 13.8838C14.7762 14.587 16.2957 14.9905 17.8488 15.068C17.2969 12.4137 19.2797 10.2656 21.6633 10.2656C22.7883 10.2656 23.8008 10.7367 24.5145 11.4961C25.3969 11.3309 26.2406 11.0004 26.993 10.5574C26.7012 11.4609 26.0895 12.2238 25.2773 12.7055C26.0648 12.6211 26.8242 12.4031 27.5273 12.0973C26.9965 12.8777 26.332 13.5703 25.5691 14.1223V14.1223Z" fill="black"/> </svg>
 
         </div>
-    </div> 
-    <div class="settingsContainer">
-         <div class="updateDP">
-            <img class="dp" src="../media/avatars/zen.jpg" alt="">
-            <label for="dpUpload">Upload profile picture</label>
-            <input type="file" name="" id="dpUpload" style="visibility: hidden;">
-         </div>
-         <div class="rowWrap">
-             <div class="wrap">
-                 <label for="">Name</label>
-                 <input type="text" name="" id="name" placeholder="Zendaya">
-             </div>
-             <div class="wrap">
-                 <label for="">Full name</label>
-                 <input type="text" name="" id="fullName" placeholder="Zendaya Coleman">
-             </div>
-         </div>
-         <div class="rowWrap">
-            <div class="wrap">
-                <label for="">Email</label>
-                <input type="text" name="" id="name" placeholder="zendaya@gmail.com">
-            </div>
-            <div class="wrap">
-                <label for="">Phone number</label>
-                <input type="text" name="" id="fullName" placeholder="3234002533">
+    </div>
+    <div class="addFeedComponent">
+        <h2>Add new feed</h2>
+        <textarea type="text" class="feedDescription" placeholder="Start typing your feed here"></textarea>
+        
+        <div class="resourceOptions">
+            <label class="addMedia" for="imageInput">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11 19H1.6C1.44087 19 1.28826 18.9368 1.17574 18.8243C1.06321 18.7117 1 18.5591 1 18.4V1.6C1 1.44087 1.06321 1.28826 1.17574 1.17574C1.28826 1.06321 1.44087 1 1.6 1H18.4C18.5591 1 18.7117 1.06321 18.8243 1.17574C18.9368 1.28826 19 1.44087 19 1.6V11" stroke="#005DBB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M1 14L8 11L13.5 13.5" stroke="#005DBB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M14 8C13.4696 8 12.9609 7.78929 12.5858 7.41421C12.2107 7.03914 12 6.53043 12 6C12 5.46957 12.2107 4.96086 12.5858 4.58579C12.9609 4.21071 13.4696 4 14 4C14.5304 4 15.0391 4.21071 15.4142 4.58579C15.7893 4.96086 16 5.46957 16 6C16 6.53043 15.7893 7.03914 15.4142 7.41421C15.0391 7.78929 14.5304 8 14 8V8Z" stroke="#005DBB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M17 17V20M14 17H17H14ZM20 17H17H20ZM17 17V14V17Z" stroke="#005DBB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                <p>Upload an image</p>
+            </label>
+            <input type="file" id="imageInput" style="visibility: hidden;width: 0px;" accept=".jpeg,.jpg,.png,.webp">
+            <label class="addMedia" for="videoInput">
+                <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg"> <path d="M11 19H1.6C1.44087 19 1.28826 18.9368 1.17574 18.8243C1.06321 18.7117 1 18.5591 1 18.4V1.6C1 1.44087 1.06321 1.28826 1.17574 1.17574C1.28826 1.06321 1.44087 1 1.6 1H18.4C18.5591 1 18.7117 1.06321 18.8243 1.17574C18.9368 1.28826 19 1.44087 19 1.6V11" stroke="#005DBB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M17 17V20M14 17H17H14ZM20 17H17H20ZM17 17V14V17Z" stroke="#005DBB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> <path d="M7.898 6.51307C7.80681 6.46089 7.70352 6.43357 7.59846 6.43384C7.4934 6.43411 7.39025 6.46196 7.29933 6.51461C7.20841 6.56726 7.13291 6.64285 7.08038 6.73384C7.02785 6.82483 7.00013 6.92801 7 7.03307V12.9661C6.99996 13.0712 7.02755 13.1745 7.08001 13.2657C7.13247 13.3568 7.20795 13.4325 7.2989 13.4853C7.38985 13.5381 7.49307 13.566 7.59821 13.5663C7.70336 13.5666 7.80674 13.5393 7.898 13.4871L13.088 10.5211C13.1799 10.4686 13.2562 10.3928 13.3093 10.3013C13.3624 10.2098 13.3904 10.1059 13.3904 10.0001C13.3904 9.89428 13.3624 9.79037 13.3093 9.69887C13.2562 9.60737 13.1799 9.53155 13.088 9.47907L7.898 6.51307V6.51307Z" stroke="#005DBB" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/> </svg>
+                <p>Upload a video</p>
+            </label>
+            <input type="file" id="videoInput" style="visibility: hidden;width: 0px;" accept=".mp4,.mov,.mpeg">
+        </div>
+        <div class="mediaPreview">
+            <h3>Preview</h3>
+            <div class="mediawrap">
+                <img src="../media/general resource/landscape3.png"></img>
             </div>
         </div>
-        <div class="rowWrap">
-            <div class="wrap">
-                <label for="">Facebook</label>
-                <input type="text" name="" id="name" placeholder="facebook.com/zendaya/">
-            </div>
-            <div class="wrap">
-                <label for="">Linkedin</label>
-                <input type="text" name="" id="fullName" placeholder="linkedin.com/in/zendaya">
-            </div>
+        <div class="PostFeedButton">
+            <a href="feeds.html">
+                Post
+            </a>
         </div>
-        <div class="rowWrap">
-            <div class="wrap">
-                <label for="">Github</label>
-                <input type="text" name="" id="name" placeholder="github.io/zendaya">
-            </div>
-            <div class="wrap">
-                <label for="">Twitter</label>
-                <input type="text" name="" id="fullName" placeholder="twitter.com/zendaya">
-            </div>
-        </div>
-        <button class="saveButton">
-            Save changes
-        </button>
     </div>
 </body>
 </html>
