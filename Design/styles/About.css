@@ -23,27 +23,6 @@ body {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  position: relative;
-  padding: 10vh 0 10vh 0;
-  background: #f3f2ef;
-}
-
-body .settingsContainer {
-  margin-left: 10%;
-  width: 60%;
-  background: white;
-  border-radius: 10px;
-  border: 1px solid #a7a7a756;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -51,47 +30,41 @@ body .settingsContainer {
   -webkit-box-pack: start;
       -ms-flex-pack: start;
           justify-content: flex-start;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  padding: 20px;
-  gap: 20px;
+  height: 250vh;
 }
 
-body .settingsContainer .updateDP {
+body .navbar {
+  background: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+body .navbar .sign_in_or_out {
+  color: white;
+}
+
+body .navbar .sign_in_or_out a {
+  color: white;
+}
+
+body .bgs {
   width: 100%;
-  height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 20px;
+  height: 50%;
 }
 
-body .settingsContainer .updateDP .dp {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
+body .backGround img {
+  width: 100%;
+  height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-body .settingsContainer .updateDP label {
-  width: 200px;
-  height: 40px;
-  background: #0fbcf9;
-  color: white;
-  border: none;
-  cursor: pointer;
+body .banners {
+  width: 50%;
+  height: 230vh;
+  position: absolute;
+  z-index: 10;
+  top: 20vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,30 +81,11 @@ body .settingsContainer .updateDP label {
           flex-direction: column;
 }
 
-body .settingsContainer .updateDP label:hover {
-  background: #005dbb;
-}
-
-body .settingsContainer .rowWrap {
+body .banners .banner {
+  position: relative;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 20px;
-}
-
-body .settingsContainer .rowWrap .wrap {
-  width: 40%;
+  height: 50%;
+  background: white;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,23 +103,54 @@ body .settingsContainer .rowWrap .wrap {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 5px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 50px;
+  padding: 50px;
 }
 
-body .settingsContainer .rowWrap .wrap input {
+body .banners .banner .heading {
   width: 100%;
-  height: 50px;
-  padding-left: 10px;
 }
 
-body .settingsContainer .saveButton {
-  margin-top: 20px;
-  width: 100px;
-  height: 40px;
-  background: #0fbcf9;
-  color: white;
-  border: none;
-  cursor: pointer;
+body .banners .banner .heading h1, body .banners .banner .heading h2 {
+  text-align: left;
+  color: #005dbb;
+  font-size: 36px;
+  font-family: 'Roboto';
+}
+
+body .banners .banner .heading h1 {
+  font-size: 72px;
+}
+
+body .banners .banner .description {
+  text-align: left;
+  color: #005dbb;
+}
+
+body .banners .banner .perks {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+  margin-top: 100px;
+}
+
+body .banners .banner .perks .perk {
+  width: 25%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,9 +165,87 @@ body .settingsContainer .saveButton {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+  height: 200px;
 }
 
-body .settingsContainer .saveButton:hover {
+body .banners .banner .perks .perk svg {
+  width: 30px;
+  height: 30px;
+}
+
+body .banners .banner .perks .perk .text {
+  text-align: left;
+  color: #005dbb;
+}
+
+body .banners .bottomBanner {
   background: #005dbb;
 }
-/*# sourceMappingURL=profile-settings.css.map */
+
+body .banners .bottomBanner .heading h1, body .banners .bottomBanner .heading h2 {
+  color: white;
+}
+
+body .banners .bottomBanner .description {
+  color: white;
+}
+
+body .banners .bottomBanner .teamDetails {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  gap: 20px;
+}
+
+body .banners .bottomBanner .teamDetails h3 {
+  color: white;
+  font-family: 'Roboto';
+}
+
+body .banners .bottomBanner .teamDetails ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+
+body .banners .bottomBanner .teamDetails ul li {
+  text-align: left;
+  list-style: none;
+  color: white;
+}
+
+body .copyrights {
+  color: white;
+  padding-bottom: 10px;
+}
+
+body .primaryColoreBackground {
+  background: #005dbb;
+}
+/*# sourceMappingURL=About.css.map */

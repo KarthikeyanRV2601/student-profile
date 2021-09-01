@@ -46,6 +46,13 @@ It also allows the user to search for a particular student in the database and v
   <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/settings.jpg" />
 </p>
 
+<p>
+  About  page
+  <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/about.png" />
+</p>
 
-
+<!-- <h2>⌨️ DEVELOPERS</h2>
+<a href="https://github.com/Mighil31">Mighil dath</a><br/>
+<a href="https://github.com/KarthikeyanRV2601">Karthikeyan</a><br/>
+<a href="https://github.com/Tanmaay3">Tanmaay kankaria</a><br/> -->
 

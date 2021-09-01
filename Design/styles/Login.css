@@ -58,10 +58,11 @@
   height: 36px;
 }
 
-#root .LoginPage header p {
+#root .LoginPage header a {
   font-family: 'Roboto';
   font-size: 18px;
   color: #0fbcf9;
+  text-decoration: none;
 }
 
 #root .LoginPage .LeftPanel {

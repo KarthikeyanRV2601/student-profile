@@ -74,10 +74,11 @@ $gradient-light:#0875e0;
           height: 36px;
         }
       }
-      p{
+      a{
         font-family: 'Roboto';
         font-size: 18px;
         color: $primary-color;
+        text-decoration: none;
       }
     }
     

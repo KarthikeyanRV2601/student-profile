@@ -28,7 +28,7 @@ body {
   background: #f3f2ef;
 }
 
-body .settingsContainer {
+body .addFeedComponent {
   margin-left: 10%;
   width: 60%;
   background: white;
@@ -48,90 +48,29 @@ body .settingsContainer {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   padding: 20px;
   gap: 20px;
 }
 
-body .settingsContainer .updateDP {
-  width: 100%;
+body .addFeedComponent h2 {
+  color: #005dbb;
+  font-family: 'Roboto';
+}
+
+body .addFeedComponent .feedDescription {
+  width: 80%;
   height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 20px;
+  resize: none;
 }
 
-body .settingsContainer .updateDP .dp {
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-body .settingsContainer .updateDP label {
-  width: 200px;
-  height: 40px;
-  background: #0fbcf9;
-  color: white;
-  border: none;
-  cursor: pointer;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-body .settingsContainer .updateDP label:hover {
-  background: #005dbb;
-}
-
-body .settingsContainer .rowWrap {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  gap: 20px;
-}
-
-body .settingsContainer .rowWrap .wrap {
-  width: 40%;
+body .addFeedComponent .mediaPreview {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -149,23 +88,47 @@ body .settingsContainer .rowWrap .wrap {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  gap: 5px;
 }
 
-body .settingsContainer .rowWrap .wrap input {
+body .addFeedComponent .mediaPreview h3 {
+  color: #005dbb;
+}
+
+body .addFeedComponent .mediaPreview .mediawrap {
   width: 100%;
-  height: 50px;
-  padding-left: 10px;
+  padding: 5px;
+  border: 1px dashed rgba(63, 63, 63, 0.432);
 }
 
-body .settingsContainer .saveButton {
-  margin-top: 20px;
-  width: 100px;
-  height: 40px;
-  background: #0fbcf9;
-  color: white;
-  border: none;
-  cursor: pointer;
+body .addFeedComponent .mediaPreview .mediawrap img, body .addFeedComponent .mediaPreview .mediawrap video {
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+body .addFeedComponent .resourceOptions {
+  width: 100%;
+  height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 20px;
+}
+
+body .addFeedComponent .resourceOptions .addMedia {
+  width: 200px;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -180,9 +143,46 @@ body .settingsContainer .saveButton {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 10px;
+  border: 1px dashed rgba(63, 63, 63, 0.432);
+  border-radius: 20px;
+  cursor: pointer;
+  background: white;
 }
 
-body .settingsContainer .saveButton:hover {
+body .addFeedComponent .resourceOptions .addMedia svg {
+  width: 40px;
+  height: 40px;
+}
+
+body .addFeedComponent .resourceOptions .addMedia:hover {
+  background: rgba(231, 231, 231, 0.836);
+}
+
+body .addFeedComponent .PostFeedButton {
+  width: 120px;
+  height: 40px;
+}
+
+body .addFeedComponent .PostFeedButton a {
+  text-decoration: none;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: #0fbcf9;
+  color: white;
+}
+
+body .addFeedComponent .PostFeedButton a:hover {
   background: #005dbb;
 }
-/*# sourceMappingURL=profile-settings.css.map */
+/*# sourceMappingURL=addFeed.css.map */
