@@ -1,0 +1,134 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+$primary-color: #0fbcf9;
+$black-color: #292929;
+$font-color:#3a3a3a;
+$shadow:0 5px 6px rgba(83, 83, 83, 0.2);
+$border-style: 1px solid #a7a7a756;
+$gradient-dark:#005dbb;
+$gradient-light:#0875e0;
+@mixin flexRow {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+@mixin Shadow {
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+@mixin flexColumn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+*{
+    margin: 0%;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'nuninto', sans-serif;
+    // font-size: 14px;
+    color: $font-color;
+
+}
+body{
+    widows: 100%;
+    // height: 100vh;
+    @include flexRow();
+    position: relative;
+    padding: 10vh 0 10vh 0;
+    background: #f3f2ef;
+   
+    
+    .searchResults{
+        width: 70%;
+        margin-left: 25%;
+        background: white;
+        border-radius: 10px;
+        border: $border-style;
+        h2{
+            width: 100%;
+            text-align: left;
+            padding-left: 5%;
+            font-size: 28px;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 500;
+            color: $gradient-dark;
+            min-height: 100px;
+            @include flexColumn();
+            align-items: flex-start;
+        }
+        .List{
+            width: 100%;
+            .listItem{
+                width: 100%;
+                min-height: 200px;
+                @include flexRow();
+                gap: 20px;
+                position: relative;
+                img{
+                    width: 70px;
+                    height: 70px;
+                    border-radius: 50%;
+                }
+                .detailsWrap{
+                    width: 50%;
+                    height: 100%;
+                    @include flexColumn();
+                    align-items: flex-start;
+                    justify-content: space-around;
+                   
+                    .name
+                    {
+                        font-size: 18px;
+                        font-family: 'Roboto';
+                        font-weight: bolder;
+                        color: $gradient-dark;
+                        text-align: left;
+                    }
+                    .recentEducation{
+                        font-size: 16px;
+                        text-align: left;
+                    }
+                    .place{
+                        font-size: 12px;
+                        color: #4b4b4b;
+                        text-align: left;
+                    }
+                }
+                .Btn{
+                    width: 150px;
+                    height: 40px;
+                    border: none;
+                    border-radius: 20px;
+                    background: $primary-color;
+                    color: white;
+                    outline: none;
+                    cursor: pointer;
+                    @include flexColumn();
+                    text-decoration: none;
+                    &:hover{
+                        background: $gradient-dark;
+
+                    }
+                }
+                .removeButton{
+                    background: #ff5e5e;
+                    &:hover{
+                        background: #ca3939;
+
+                    }
+                }
+                .line{
+                    position: absolute;
+                    width: 80%;
+                    border-bottom: 1px solid #9494944d;
+                    bottom: 10px;
+                }
+            }
+        }
+    }
+}

@@ -28,9 +28,12 @@ It also allows the user to search for a particular student in the database and v
 </p>
 <p>
   Search page
-  <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/search.jpg" />
+  <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/search_page.jpg" />
 </p>
-
+<p>
+  Friends page
+  <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/search_page.jpg" />
+</p>
 <p>
   Feeds page 1
   <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/feeds1.jpg" />
@@ -40,7 +43,10 @@ It also allows the user to search for a particular student in the database and v
   Feeds page 2
   <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/feed2.jpg" />
 </p>
-
+<p>
+  Add new feed
+  <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/addFeedpage.jpg" />
+</p>
 <p>
   Settings  page
   <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/settings.jpg" />
