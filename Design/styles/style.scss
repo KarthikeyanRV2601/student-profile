@@ -23,7 +23,7 @@ $gradient-light:#0875e0;
 }
 @mixin flexColumn {
     display: flex;
-    justify-content: center;
+    justify-content: center;    
     align-items: center;
     text-align: center;
     flex-direction: column;
@@ -41,7 +41,7 @@ body{
         
         @include flexRow();
         
-       
+        
         .userInformation{
             
             margin-left: 20%;

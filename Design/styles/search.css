@@ -251,7 +251,7 @@ body .searchResults .List .listItem img {
 }
 
 body .searchResults .List .listItem .detailsWrap {
-  width: 70%;
+  width: 50%;
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -293,8 +293,8 @@ body .searchResults .List .listItem .detailsWrap .place {
   text-align: left;
 }
 
-body .searchResults .List .listItem .viewButton {
-  width: 100px;
+body .searchResults .List .listItem .btn {
+  width: 150px;
   height: 40px;
   border: none;
   border-radius: 20px;
@@ -312,14 +312,11 @@ body .searchResults .List .listItem .viewButton {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  gap: 20px;
   text-decoration: none;
 }
 
-body .searchResults .List .listItem .viewButton:hover {
+body .searchResults .List .listItem .btn:hover {
   background: #005dbb;
 }
 
