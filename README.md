@@ -32,7 +32,7 @@ It also allows the user to search for a particular student in the database and v
 </p>
 <p>
   Friends page
-  <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/search_page.jpg" />
+  <img src="https://github.com/KarthikeyanRV2601/student-profile/raw/develop/screenshots/friends.jpg" />
 </p>
 <p>
   Feeds page 1
